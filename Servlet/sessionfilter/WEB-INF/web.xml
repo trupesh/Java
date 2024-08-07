@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>  
+<context-param>
+	<param-name>college_name</param-name>
+	<param-value>LDRP ITR</param-value>
+</context-param>
+
+<servlet>  
+	<servlet-name>request</servlet-name>  
+	<servlet-class>request</servlet-class>  
+</servlet> 
+<servlet-mapping>  
+	<servlet-name>request</servlet-name>  
+	<url-pattern>/request</url-pattern>  
+</servlet-mapping>
+<servlet>  
+	<servlet-name>home</servlet-name>  
+	<servlet-class>home</servlet-class>  
+</servlet> 
+
+
+<servlet-mapping>  
+	<servlet-name>home</servlet-name>  
+	<url-pattern>/home</url-pattern>  
+</servlet-mapping>  
+
+<servlet>  
+	<servlet-name>profile</servlet-name>  
+	<servlet-class>profile</servlet-class>  
+</servlet> 
+
+
+<servlet-mapping>  
+	<servlet-name>profile</servlet-name>  
+	<url-pattern>/profile</url-pattern>  
+</servlet-mapping> 
+<servlet>  
+	<servlet-name>logout</servlet-name>  
+	<servlet-class>logout</servlet-class>  
+</servlet> 
+
+
+<servlet-mapping>  
+	<servlet-name>logout</servlet-name>  
+	<url-pattern>/logout</url-pattern>  
+</servlet-mapping>  
+
+<filter>  
+	<filter-name>first</filter-name>  
+	<filter-class>firstfilter</filter-class>  
+</filter> 
+
+
+<filter-mapping>  
+	<filter-name>first</filter-name>  
+	<url-pattern>/profile</url-pattern>  
+	
+</filter-mapping>  
+<filter-mapping>  
+	<filter-name>first</filter-name>  
+	<url-pattern>/home</url-pattern>  
+	
+</filter-mapping>  
+
+
+
+
+
+<welcome-file-list>
+	<welcome-file>signin.html</welcome-file>
+</welcome-file-list>
+  
+</web-app>  
